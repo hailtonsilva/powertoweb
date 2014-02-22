@@ -1,0 +1,125 @@
+/* line 17, ../compass/sass/style.scss */
+.shadow {
+  -webkit-box-shadow: black 5px 5px 5px;
+  -moz-box-shadow: black 5px 5px 5px;
+  box-shadow: black 5px 5px 5px;
+}
+
+/* line 21, ../compass/sass/style.scss */
+body {
+  color: #333333;
+  font-family: Roboto, Arial, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 1.7em !important;
+  background: #F8F8F8;
+  background: url("assets/images/radial_gradient.svg") 50% -300px no-repeat, url("assets/images/linear_gradient.svg") 50% 0 repeat-x, #fafafa;
+  background-size: 1600px 600px, 100% 500px,auto;
+}
+
+/* line 28, ../compass/sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, Arial, Verdana, sans-serif;
+  color: #333333;
+  font-weight: 400;
+}
+
+/* line 29, ../compass/sass/style.scss */
+a {
+  color: #a0c333;
+}
+
+/* line 30, ../compass/sass/style.scss */
+a:hover {
+  color: #a0c333;
+  opacity: 0.8;
+}
+
+/* line 31, ../compass/sass/style.scss */
+.navbar-brand {
+  padding: 2px;
+}
+
+/* line 38, ../compass/sass/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Verdana, sans-serif;
+}
+
+/* line 43, ../compass/sass/style.scss */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 49, ../compass/sass/style.scss */
+.header .navbar {
+  margin: 0;
+  border: none;
+}
+
+/* line 53, ../compass/sass/style.scss */
+.page-section {
+  width: 100%;
+  min-height: 800px;
+  padding: 50px 0;
+  border-bottom: 10px solid #fff;
+}
+
+/* line 60, ../compass/sass/style.scss */
+.page-section.intro {
+  min-height: 600px;
+}
+
+/* line 64, ../compass/sass/style.scss */
+.back-to-top {
+  display: inline-block;
+  clear: both;
+  background: #fff;
+  color: #333;
+  padding: 0 10px 5px;
+  margin: 20px 0 0;
+  text-shadow: none;
+}
+
+/* line 73, ../compass/sass/style.scss */
+.back-to-top:hover {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 78, ../compass/sass/style.scss */
+hr {
+  border-color: #ddd;
+}
+
+@media (min-width: 768px) {
+  /* line 81, ../compass/sass/style.scss */
+  .header .navbar-brand {
+    padding-left: 0;
+  }
+
+  /* line 84, ../compass/sass/style.scss */
+  .navbar-nav {
+    float: right;
+  }
+}
+@media (max-width: 480px) {
+  /* line 89, ../compass/sass/style.scss */
+  .page-section h1 {
+    font-size: 3em;
+  }
+
+  /* line 92, ../compass/sass/style.scss */
+  .page-section h2 {
+    font-size: 2em;
+  }
+
+  /* line 95, ../compass/sass/style.scss */
+  .page-section p {
+    font-size: 1em;
+    margin: 0 0 20px;
+  }
+}
