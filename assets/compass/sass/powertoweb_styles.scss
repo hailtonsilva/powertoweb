@@ -1,21 +1,20 @@
 // Importar o Twitter Bootstrap Framework v3
 @import "_bootstrap";
 
-// Redefinir o tamanho dos containers do bootstrap (codigo original em "_grid.scss")
+// Redefinir o tamanho dos containers do bootstrap (codigo original em "_grid.scss" linha 10)
 .container {
   @include container-fixed();
 
   @media (min-width: $screen-sm-min) {
-    width: $container-sm;
+    width: $container-sm ;
   }
   @media (min-width: $screen-md-min) {
-    width: $container-md;
+    width: $container-md - 200 ;
   }
   @media (min-width: $screen-lg-min) {
-    width: $container-lg;
+    width: $container-lg - 200 ;
   }
 }
-
 
 $Link: #a0c333;
 $TextColor: #333;
@@ -46,7 +45,7 @@ body {
 	padding-top: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {font-family: $google_font; color: $TextColor; font-weight: $RegularGoogleFont; }
+h1, h2, h3, h4, h5, h6 {font-family: $google_font; color: $TextColor; }
 a {color:$Link;}
 a:hover {color:$Link;opacity: 0.8}
 .navbar-brand {padding:2px;}
@@ -61,11 +60,11 @@ a:hover {color:$Link;opacity: 0.8}
 	width: 100%;
 	z-index: 10;
 }
-	#block-menu {
+	#block-bg {
 		border: 1px solid #DDD;
 		border-radius: 5px;
-		background: #FAFAFA;
-		background: url("http://www.yootheme.com/templates/yoo_yootheme/images/menu_bg.svg") 0 0 repeat-x;
+		background-color: #FAFAFA;
+		background-image: url("http://www.powertoweb.com/assets/images/block_bg.svg") 0 0 repeat-x;
 		background-size: 100% 100%;
 		font-weight: $RegularGoogleFont;
 	}
@@ -77,11 +76,11 @@ a:hover {color:$Link;opacity: 0.8}
 .page-section {
 	width: 100%;
 	min-height: 800px;
-	padding: 50px 0;
+	padding: 20px 0;
 }
 	.page-section-inner {
-		border: 10px solid red;
-		margin: 2em auto;
+		// border: 10px solid red;
+		
 	}
 
 .page-section.intro {
