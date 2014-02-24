@@ -17,12 +17,13 @@
 }
 
 $Link: #a0c333;
-$TextColor: #333;
+$TextColor: #47494B;
 $White: #fff;
-$google_font: Roboto, Arial, Verdana, sans-serif;
+$google_font: 'Raleway', Verdana, sans-serif;
 $Thin: lighter;
 $ThinGoogleFont: 300;
 $RegularGoogleFont: 400;
+$BoldGoogleFont: 500;
 $OneEm: 1em;
 $ThreeEm: 3em;
 $CemPorCento: 100%;
@@ -34,7 +35,7 @@ $fontSmall: 1em;
 
 @import 'compass/css3';
 .shadow {
-    @include box-shadow(#000 5px 5px 5px);
+    @include box-shadow(0 1px 6px 0 #c2c2c2);
 }
 
 body {
@@ -45,10 +46,20 @@ body {
 	padding-top: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {font-family: $google_font; color: $TextColor; }
+
+h1, h2, h3, h4, h5, h6 {font-family: $google_font; color: $TextColor; font-weight: $RegularGoogleFont; }
 a {color:$Link;}
 a:hover {color:$Link;opacity: 0.8}
-.navbar-brand {padding:2px;}
+.navbar-brand, .img-padding {padding:2px;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+color: $TextColor;
+opacity: 0.5;
+background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+color: $TextColor;
+font-weight: $BoldGoogleFont;
+}
 
 * {
 	margin: 0;
@@ -63,10 +74,10 @@ a:hover {color:$Link;opacity: 0.8}
 	#block-bg {
 		border: 1px solid #DDD;
 		border-radius: 5px;
-		background-color: #FAFAFA;
-		background-image: url("http://www.powertoweb.com/assets/images/block_bg.svg") 0 0 repeat-x;
+		background: #FAFAFA;
+		background: url("http://www.powertoweb.com/assets/images/block_bg.svg") 0 0 repeat-x;
 		background-size: 100% 100%;
-		font-weight: $RegularGoogleFont;
+		@include box-shadow(0 3px 3px 0 #E6E6E6);
 	}
 
 .header .navbar {
