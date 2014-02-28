@@ -46,20 +46,30 @@ body {
 	padding-top: 1em;
 }
 
-
-h1, h2, h3, h4, h5, h6 {font-family: $google_font; color: $TextColor; font-weight: $RegularGoogleFont; }
+h1, h2, h3, h4, h5, h6 {font-family: $google_font; color: $TextColor; font-weight: $RegularGoogleFont; margin-top: 12.5px; margin-bottom: 12.5px; @include text-shadow(rgba(51, 51, 51, 0.37) 0px 0px 1px);}
+h4 {font-size: $font-size-small * 1.4;}
 a {color:$Link;}
 a:hover {color:$Link;opacity: 0.8}
-.navbar-brand, .img-padding {padding:2px;}
+.navbar-brand, .img-padding {padding:6px;}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-color: $TextColor;
-opacity: 0.5;
-background-color: transparent;
+	color: $TextColor;
+	opacity: 0.5;
+	background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a {
 color: $TextColor;
 font-weight: $BoldGoogleFont;
 }
+
+ul li {
+	padding: 4px 0 4px 15px;
+	list-style: none;
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+
+
 
 * {
 	margin: 0;
@@ -71,13 +81,12 @@ font-weight: $BoldGoogleFont;
 	width: 100%;
 	z-index: 10;
 }
-	#block-bg {
-		border: 1px solid #DDD;
+	#menu-bg {
+		border: 1px solid #D1D1D1;
 		border-radius: 5px;
 		background: #FAFAFA;
 		background: url("http://www.powertoweb.com/assets/images/block_bg.svg") 0 0 repeat-x;
 		background-size: 100% 100%;
-		@include box-shadow(0 3px 3px 0 #E6E6E6);
 	}
 
 .header .navbar {
@@ -85,18 +94,16 @@ font-weight: $BoldGoogleFont;
 	border: none;
 }
 .page-section {
-	width: 100%;
-	min-height: 800px;
-	padding: 20px 0;
+	padding-top: 40px;
 }
-	.page-section-inner {
-		// border: 10px solid red;
-		
+	.block-inner {
+		border: 1px solid #CCC;
+		@include border-radius(5px);
+		background: rgba(245, 245, 245, 0.19);
+		@include box-shadow(0 1px 18px 0 rgba(230, 230, 230, 0.66) inset);
+		padding: 8px;
+		background: rgba(249, 249, 249, 0.9);
 	}
-
-.page-section.intro {
-	min-height: 600px;
-}
 
 .back-to-top {
 	display: inline-block;
@@ -112,7 +119,6 @@ font-weight: $BoldGoogleFont;
 	color: #fff;
 	text-decoration: none;
 }
-hr {border-color: #ddd;}
 
 @media (min-width: 768px) {
 	.header .navbar-brand {
@@ -134,3 +140,11 @@ hr {border-color: #ddd;}
 		margin: 0 0 20px;
 	}
 }
+
+hr {
+margin-top: 15px;
+margin-bottom: 15px;
+border-top: 1px solid #ddd;
+}
+
+.col-sm-4 {margin: 15px 0;}

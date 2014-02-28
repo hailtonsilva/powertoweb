@@ -10,7 +10,7 @@ images_dir = "../images"    #the folder with your images
 output_style = :compressed # After dev :compressed ELSE :expanded
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = true
+line_comments = false
 
 # Obviously
 preferred_syntax = :scss
