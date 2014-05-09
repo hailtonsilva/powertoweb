@@ -1,0 +1,201 @@
+// Importar o Twitter Bootstrap Framework v3
+@import "_bootstrap";
+
+// Redefinir o tamanho dos containers do bootstrap (codigo original em "_grid.scss" linha 10)
+.container {
+  @include container-fixed();
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm ;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md - 200 ;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg - 200 ;
+  }
+}
+
+$Link: #a0c333;
+$TextColor: #47494B;
+$White: #fff;
+$google_font: 'Raleway', Verdana, sans-serif;
+$google_fontBody: 'Open Sans', Verdana, sans-serif;
+$Thin: lighter;
+$ExtraThinGoogleFont: 100;
+$ThinGoogleFont: 300;
+$RegularGoogleFont: 400;
+$BoldGoogleFont: 500;
+$OneEm: 1em;
+$ThreeEm: 3em;
+$CemPorCento: 100%;
+$BgGradient: url("http://powertoweb.com/assets/images/radial_gradient.svg") 50% -300px no-repeat, url("http://powertoweb.com/assets/images/linear_gradient.svg") 50% 0 repeat-x, #FAFAFA;
+
+$fontBig: 3.2em;
+$fontUmMeio: 1.7em !important;
+$fontSmall: 1em;
+
+@import 'compass/css3';
+.shadow {
+    @include box-shadow(0 1px 6px 0 #c2c2c2);
+}
+
+body {
+	color: $TextColor; font-family: $google_fontBody; font-size: 1.47em !important;
+	background: #F8F8F8;
+	background: $BgGradient;
+	background-size: 1600px 600px, 100% 500px,auto;
+	padding-top: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {transition: font-size 0s ease 0s, letter-spacing 0.5s ease-out 0s;font-family: $google_font; color: $TextColor; font-weight: $ExtraThinGoogleFont; margin-top: 12.5px; margin-bottom: 12.5px;}
+h4 {font-size: $font-size-small * 1.4;}
+.xs-heading {font-size: $font-size-small * 1.4;}
+.s-h1{font-size: $font-size-small * 2;}
+.s-h2{font-size: $font-size-small * 1.7;}
+.regular-font{font-weight: $RegularGoogleFont;}
+
+a {color:$Link;}
+a:hover {color:$Link;opacity: 0.8}
+.navbar-brand, .img-padding {padding-top:3px;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: $TextColor;
+	opacity: 0.5;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+color: $TextColor;
+font-weight: $BoldGoogleFont;
+padding-top: 7.5px;
+padding-bottom: 4.5px;
+}
+
+ul li {
+	padding: 4px 0 4px 15px;
+	list-style: none;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: $google_fontBody;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+	#menu-bg {
+		border: 1px solid #D1D1D1;
+		border-radius: 5px;
+		background: #FAFAFA;
+		background: url("http://www.powertoweb.com/assets/images/block_bg.svg") 0 0 repeat-x;
+		background-size: 100% 100%;
+	}
+
+.header .navbar {
+	margin: 0;
+	border: none;
+}
+.page-section {
+	padding-top: 40px;
+}
+	.block-inner {
+		border: 1px solid #CCC;
+		@include border-radius(5px);
+		background: rgba(245, 245, 245, 0.19);
+		@include box-shadow(0 1px 18px 0 rgba(230, 230, 230, 0.66) inset);
+		padding: 8px;
+		background: rgba(249, 249, 249, 0.9);
+	}
+
+.back-to-top {
+	display: inline-block;
+	clear: both;
+	background: #fff;
+	color: #333;
+	padding: 0 10px 5px;
+	margin: 20px 0 0;
+	text-shadow: none;
+}
+.back-to-top:hover {
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1em;
+		margin: 0 0 20px;
+	}
+}
+
+hr {
+margin-top: 15px;
+margin-bottom: 15px;
+border-top: 1px solid #ddd;
+}
+
+.col-sm-4 {margin: 15px 0;}
+
+
+
+@media screen and (min-width: 1200px) {
+	.lead {
+        font-size:36px;
+        /*color: red;*/
+        margin-bottom: 15px; line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+	.lead {
+        font-size:30px;
+        /*color: green;*/
+        margin-bottom: 15px; line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 992px) {
+	.lead {
+		font-size: 25px;
+		/*color: blue;*/
+		margin-bottom: 15px; line-height: 1.2;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.lead {
+		font-size: 35px;
+		/*color: yellow;*/
+		margin-bottom: 15px; line-height: 1.2;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.lead {
+		font-size: 15px;
+		/*color: orange;*/
+		margin-bottom: 15px; line-height: 1.2;
+	}
+}
