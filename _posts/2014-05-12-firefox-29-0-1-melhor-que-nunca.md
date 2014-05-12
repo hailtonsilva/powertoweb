@@ -5,7 +5,7 @@ author: hailtonsilva
 categories: [pc]
 ---
 ##O Firefox 29.0.1 está melhor que nunca! Tem uma nova interface amigável, está mais veloz e está compromotida a melhorar a privacidade na web.
-<img alt="Firefox" width="300px" src="https://assets.mozillalabs.com/Brands-Logos/Firefox/logo-only/firefox_logo-only_RGB.png">
+<img alt="Firefox" width="300px" src="/images/firefox_logo-only_RGB.png">
 Dúvidas não há, o Firefox sempre foi e continua a ser um grande impulsionador da inovação no que respeita a navegação web. Um dos pontos fortes do Firefox foi a sua velocidade de navegação aleada a sua grande versatilidade, dado as suas optimas extenções, desenvolvidas pela sua grande comunidade. Embora esta versatilidade e rapidez de navegação fora superada, com o novo browser da google (google chrome), Firefox, nunca baixou os braços e continuou a trabalhar no sentido de inovar e melhorar a rapidez de navegação. Hoje, com o lançamento do Firefox 29.0.1, a Mozilla deu mais um grande passo na afirmação do Firefox, como sendo uma ferramenta de navegação rápida, confiável e que se preocupa com a "privacidade" dos seus utilizadores.
 
 
