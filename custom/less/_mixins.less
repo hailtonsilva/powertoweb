@@ -1,0 +1,68 @@
+// ==========================================================================
+// PowerToWeb – Mixins
+// ==========================================================================
+
+// Font Sizes (REMs with PX fallback for older browsers)
+.font-size (@size) {
+  @remValue: @size / @default-font-size;
+  @pxValue: (@size);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+// Line Height Sizes (REMs with PX fallback for older browsers)
+.line-height (@size) {
+  @remValue: @size / @default-font-size;
+  @pxValue: (@size);
+  line-height: ~"@{pxValue}px"; 
+  line-height: ~"@{remValue}rem";
+}
+
+// Opacity
+.opacity (@opacity: 0.5) {
+  -webkit-opacity:  @opacity;
+  -moz-opacity:     @opacity;
+  opacity:    @opacity;
+}
+
+// Rounded Corners
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+// Box Shadow
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+
+
+// ************************
+// Mixins especificos
+// ************************
+
+// buttons
+.buttonMixin(@color: #444, @BgColor: @default-BgColor){
+  border: 1px solid @BgColor;
+  border-bottom: 4px solid darken(@BgColor, 10%);
+  padding: 0.5em 1.5em;
+  margin: 0.3em 0;
+  color: @color;
+  background-color: @BgColor;
+  text-decoration: none;
+  .border-radius(4px;);
+    &:extend(.text-center);
+    &:extend(.inline-block);
+  position: relative;
+    &:hover,
+    &:focus,
+    &.active {
+      .opacity(0.9);
+    }
+    &:active {
+      top: 1px;
+    }
+}
