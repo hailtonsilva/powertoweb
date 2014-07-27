@@ -1,1 +1,148 @@
-.header-powertoweb{color:#fff;height:auto;padding-top:60px;margin-bottom:11px;background:url('../img/header-img.jpg') no-repeat scroll center center #678384}.header-powertoweb-index{min-height:400px}html{padding-bottom:15px}a{text-decoration:none}a :hover{text-decoration:none;-webkit-opacity:.9;-moz-opacity:.9;opacity:.9}a :focus{outline:thin dotted}a :active,a a:hover{outline:0}.control-button{width:27px;height:27px;line-height:17px;margin:0;padding:0;border-radius:50%;text-align:center;font-size:18px;font-weight:normal;color:#bdc3c7;background:rgba(236,240,241,0.27);position:absolute;left:50%;bottom:40px;font-size:200%}.jumbo-logo{display:inline-block;margin-top:130px;margin-bottom:5px;width:160px}.menu{margin-top:-17px}@media (min-width:768px){.logo{margin-left:-36px}.menu{margin-right:-16px}}@media (max-width:768px){.logo{margin-left:-40px;float:none !important;margin-left:auto;margin-right:auto;width:100%;max-width:250px}}body,h1,h2,h3,h4,h5,h6{font-family:'Open Sans',sans-serif}#sobre,#solucoes,#clientes{margin-top:100px;padding-top:100px;border-top:1px solid #ddd}#contatos{border-top:1px solid #ddd;padding-top:30px}#contatos h2{padding-bottom:10px}#clientes{padding-bottom:200px}.pulse{-webkit-animation-name:pulse}img.pulse{vertical-align:middle;-webkit-animation-iteration-count:infinite;-webkit-animation-duration:3s;animation:pulse;animation-iteration-count:infinite;animation-duration:3s}.imgCenter{padding:20px;margin:0 auto;display:block}.lilSquares{background:#333;width:70px;height:70px;margin-top:10px;margin-right:7px;float:left}.Squares{background:#333;width:70px;height:70px;margin-top:10px;margin-right:7px;float:left;width:150px;height:150px;background:transparent;text-align:center;padding:10px}.hailton{background:url("../img/hailton.jpg") center;background-size:100%}.footer,footer{background-color:#444;display:flex;margin-bottom:-20px;color:#747575;font-size:14px}
+.header-powertoweb {
+  color: #fff;
+  height: auto;
+  padding-top: 60px;
+  margin-bottom: 11px;
+  background: url('../img/header-img.jpg') no-repeat scroll center center #678384;
+}
+.header-powertoweb-index {
+  min-height: 400px;
+}
+html {
+  padding-bottom: 15px;
+}
+a {
+  text-decoration: none;
+}
+a :hover {
+  text-decoration: none;
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+}
+a :focus {
+  outline: thin dotted;
+}
+a :active,
+a a:hover {
+  outline: 0;
+}
+.control-button {
+  width: 27px;
+  height: 27px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  color: #bdc3c7;
+  background: rgba(236, 240, 241, 0.27);
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  font-size: 200%;
+}
+.jumbo-logo {
+  display: inline-block;
+  margin-top: 130px;
+  margin-bottom: 5px;
+  width: 160px;
+}
+.menu {
+  margin-top: -17px;
+}
+@media (min-width: 768px) {
+  .logo {
+    margin-left: -36px;
+  }
+  .menu {
+    margin-right: -16px;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    margin-left: -40px;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+#sobre,
+#solucoes,
+#clientes {
+  margin-top: 100px;
+  padding-top: 100px;
+  border-top: 1px solid #ddd;
+}
+#contatos {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}
+#contatos h2 {
+  padding-bottom: 10px;
+}
+#clientes {
+  padding-bottom: 200px;
+}
+.pulse {
+  -webkit-animation-name: pulse;
+}
+img.pulse {
+  vertical-align: middle;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  animation: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+.imgCenter {
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.lilSquares {
+  background: #333;
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  margin-right: 7px;
+  float: left;
+}
+.Squares {
+  background: #333;
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  margin-right: 7px;
+  float: left;
+  width: 150px;
+  height: auto;
+  background: transparent;
+  text-align: center;
+  padding: 10px;
+}
+.hailton {
+  background: url("../img/hailton.jpg") center;
+  background-size: 100%;
+}
+.footer,
+footer {
+  background-color: #444;
+  display: flex;
+  margin-bottom: -20px;
+  color: #747575;
+  font-size: 14px;
+}
