@@ -1,0 +1,1158 @@
+/**
+ *  ____                       _____  __        __   _                         
+ * |  _ \ _____      _____ _ _|_   _|_\ \      / /__| |__   ___ ___  _ __ ___  
+ * | |_) / _ \ \ /\ / / _ \ '__|| |/ _ \ \ /\ / / _ \ '_ \ / __/ _ \| '_ ` _ \ 
+ * |  __/ (_) \ V  V /  __/ |   | | (_) \ V  V /  __/ |_) | (_| (_) | | | | | |
+ * |_|   \___/ \_/\_/ \___|_|   |_|\___/ \_/\_/ \___|_.__(_)___\___/|_| |_| |_|
+ * This is a PowerToWeb project under MIT licence
+ * http://powertoweb.com/powertocss
+ */
+/* ======================================
+ * PowerToWeb - Normalize (Global Styles)
+ * ======================================*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-size: 16px;
+  font-size: 1rem;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
+  color: #434343;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
+i,
+em,
+.em,
+blockquote,
+q {
+  font-style: italic;
+}
+a {
+  color: #54f272;
+  text-decoration: none;
+}
+a :hover {
+  text-decoration: none;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+a :focus {
+  outline: thin dotted;
+}
+a :active,
+a a:hover {
+  outline: 0;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+ul + p,
+ul + pre,
+ol + p,
+ol + pre {
+  margin-top: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+mark {
+  background: #ff0;
+  color: #111;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dfn {
+  font-style: italic;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 1em 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: normal;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+h1,
+.h1 {
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+h2,
+.h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+h3,
+.h3 {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+h4,
+.h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+h5,
+.h5 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+h6,
+.h6 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.no-style-heading {
+  font-size: 100%;
+}
+/* ===========================
+ * PowerToWeb - Lists
+ * ===========================*/
+dl,
+menu,
+ol,
+ul {
+  margin: 0;
+  list-style: none;
+}
+menu,
+ol,
+ul {
+  padding: 0;
+}
+dd,
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0;
+  list-style: none;
+}
+dd {
+  margin-bottom: 1em;
+}
+li {
+  margin-left: 15px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+.list-unstyled,
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-unstyled li,
+.list-inline li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* =========================
+ * PowerToWeb - Blockquotes
+ * =========================*/
+blockquote {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 32px;
+  line-height: 2rem;
+  color: #434343;
+  margin: 1em 0;
+}
+blockquote p {
+  margin: 1em 0;
+}
+cite {
+  color: #434343;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: normal;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* ======================
+ * PowerToWeb - Code
+ * ======================*/
+code,
+kbd,
+pre,
+samp {
+  word-wrap: break-word;
+  font-family: 'courier new', monospace, serif;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  background-color: #f1f1f1;
+  padding: 10px;
+  color: #ac3022;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* ========================
+ * PowerToWeb - Menu
+ * ========================*/
+.menu {
+  color: #434343;
+  background: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f0f0f0));
+  background: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
+  background: -moz-linear-gradient(top, #ffffff, #f0f0f0);
+  background: -ms-linear-gradient(top, #ffffff, #f0f0f0);
+  background: -o-linear-gradient(top, #ffffff, #f0f0f0);
+}
+.menu a {
+  color: #434343;
+  display: block;
+  padding: 10px;
+}
+.menu a:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  float: left;
+  display: inline;
+  position: relative;
+}
+.menu ul li ul {
+  left: 0;
+  top: 100%;
+}
+.menu ul ul {
+  display: none;
+}
+.menu ul ul li:hover > ul {
+  right: -120px;
+  top: 0;
+  left: auto;
+}
+.menu li:hover > ul {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  width: 120px;
+}
+.menu > input,
+.menu > label {
+  display: none;
+}
+.menu > label {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  padding-right: 0;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*Media query*/
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+  }
+  .menu > label,
+  .menu ul li ul {
+    display: block;
+  }
+  .menu > ul {
+    display: none;
+    clear: both;
+  }
+  .menu > input:checked + ul {
+    /* <================ This is the key */
+    display: block;
+  }
+  .menu ul ul li a:before {
+    display: inline;
+  }
+  .menu ul li {
+    float: none;
+    display: block;
+    border-right: none;
+    padding-left: 10px;
+  }
+  .menu li:hover ul {
+    position: relative;
+    width: auto;
+  }
+  .menu ul ul li:hover > ul {
+    right: auto;
+    top: auto;
+    left: auto;
+  }
+}
+/*Side Menu*/
+.side-menu {
+  display: block;
+  /* show this only on small screens */
+  font-size: 12px;
+  background: #f5f5f5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.side-menu ul > li > ul > li {
+  margin-left: 13px;
+  margin-top: 0.5em;
+  line-height: 1.5;
+}
+.side-menu ul > li > ul > li a:active,
+.side-menu ul > li > ul > li a:hover,
+.side-menu ul > li > ul > li a:focus {
+  color: #54f272;
+}
+.side-menu a {
+  color: #aaa;
+}
+.side-menu span {
+  position: relative;
+  display: block;
+}
+.side-menu span,
+.side-menu span:before,
+.side-menu span:after {
+  background-color: #fff;
+  width: 100%;
+  height: 0.2em;
+}
+.side-menu span:before,
+.side-menu span:after {
+  position: absolute;
+  margin-top: -0.6em;
+  content: " ";
+}
+.side-menu span:after {
+  margin-top: 0.6em;
+}
+/* =======================
+ * PowerToWeb - Forms
+ * =======================*/
+fieldset {
+  border: 0;
+  padding: 0;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+label {
+  margin: 0;
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=tel],
+textarea {
+  padding: 9px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: normal;
+  background-color: #f8f8f8;
+  border: 1px solid #c3c3c3;
+  color: #696969;
+  margin: 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+input[type=checkbox],
+input[type=radio] {
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+.checkbox {
+  margin: 0.2em 0;
+}
+.checkbox input[type=checkbox],
+.checkbox input[type=radio] {
+  margin-top: 0.05em;
+}
+.checkbox label {
+  padding-left: 5px;
+  overflow: hidden;
+  display: table;
+  *zoom: 1;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+  pointer-events: none;
+  cursor: not-allowed;
+  -webkit-opacity: 0.65;
+  -moz-opacity: 0.65;
+  opacity: 0.65;
+  border-color: #ddd;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* =======================
+ * PowerToWeb - Buttons
+ * =======================*/
+.button,
+button {
+  border: 1px solid #f9f9f9;
+  border-bottom: 4px solid #e0e0e0;
+  padding: 0.5em 1.5em;
+  margin: 0.15em;
+  color: #444444;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  border-left: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+  border-top: 1px solid #d1d1d1;
+}
+.button:hover,
+button:hover,
+.button:focus,
+button:focus,
+.button.active,
+button.active {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  outline: none;
+}
+.button:active,
+button:active {
+  top: 1px;
+}
+.button-blue {
+  border: 1px solid #60b8f0;
+  border-bottom: 4px solid #31a3ec;
+  padding: 0.5em 1.5em;
+  margin: 0.15em;
+  color: #ffffff;
+  background-color: #60b8f0;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+.button-blue:hover,
+.button-blue:focus,
+.button-blue.active {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  outline: none;
+}
+.button-blue:active {
+  top: 1px;
+}
+.button-red {
+  border: 1px solid #d53d2c;
+  border-bottom: 4px solid #ac3022;
+  padding: 0.5em 1.5em;
+  margin: 0.15em;
+  color: #ffffff;
+  background-color: #d53d2c;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+.button-red:hover,
+.button-red:focus,
+.button-red.active {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  outline: none;
+}
+.button-red:active {
+  top: 1px;
+}
+.button-green {
+  border: 1px solid #54f272;
+  border-bottom: 4px solid #25ee4b;
+  padding: 0.5em 1.5em;
+  margin: 0.15em;
+  color: #ffffff;
+  background-color: #54f272;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+.button-green:hover,
+.button-green:focus,
+.button-green.active {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  outline: none;
+}
+.button-green:active {
+  top: 1px;
+}
+.button-orange {
+  border: 1px solid #f06727;
+  border-bottom: 4px solid #d54e0f;
+  padding: 0.5em 1.5em;
+  margin: 0.15em;
+  color: #ffffff;
+  background-color: #f06727;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+.button-orange:hover,
+.button-orange:focus,
+.button-orange.active {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  outline: none;
+}
+.button-orange:active {
+  top: 1px;
+}
+.button-black {
+  border: 1px solid #444444;
+  border-bottom: 4px solid #2b2b2b;
+  padding: 0.5em 1.5em;
+  margin: 0.15em;
+  color: #ffffff;
+  background-color: #444444;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+.button-black:hover,
+.button-black:focus,
+.button-black.active {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  outline: none;
+}
+.button-black:active {
+  top: 1px;
+}
+.button-disabled,
+button[disabled] {
+  border: 1px solid #eeeeee;
+  border-bottom: 4px solid #d5d5d5;
+  padding: 0.5em 1.5em;
+  margin: 0.15em;
+  color: #999999;
+  background-color: #eeeeee;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  border-bottom: 4px solid #eee;
+}
+.button-disabled:hover,
+button[disabled]:hover,
+.button-disabled:focus,
+button[disabled]:focus,
+.button-disabled.active,
+button[disabled].active {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  outline: none;
+}
+.button-disabled:active,
+button[disabled]:active {
+  top: 1px;
+}
+.button-disabled:active,
+button[disabled]:active {
+  top: 0px;
+}
+.button-disabled:hover,
+button[disabled]:hover,
+.button-disabled:focus,
+button[disabled]:focus,
+.button-disabled.active,
+button[disabled].active {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+/* ==========================
+ * PowerToWeb - Helpers
+ * ==========================*/
+.logo {
+  color: #fff;
+  width: 250px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.left,
+.checkbox input[type=checkbox],
+.checkbox input[type=radio] {
+  float: left;
+}
+.right {
+  float: right;
+}
+.block,
+.checkbox {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block,
+.list-inline,
+.list-inline li,
+.button,
+button,
+.button-blue,
+.button-red,
+.button-green,
+.button-orange,
+.button-black,
+.button-disabled,
+button[disabled] {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.none,
+[hidden] {
+  display: none;
+}
+.font-ultra-bold {
+  font-weight: 900;
+}
+.font-bold,
+b,
+strong,
+.strong {
+  font-weight: 700;
+}
+.font-normal,
+dt,
+cite,
+legend,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=tel],
+textarea {
+  font-weight: 500;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-thin {
+  font-weight: 100;
+}
+.font-normal,
+dt,
+cite,
+legend,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=tel],
+textarea {
+  font-style: normal;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-left {
+  text-align: left;
+}
+.text-left img.displayed {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+.text-right {
+  text-align: right;
+}
+.text-right img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+.text-center,
+.button,
+button,
+.button-blue,
+.button-red,
+.button-green,
+.button-orange,
+.button-black,
+.button-disabled,
+button[disabled] {
+  text-align: center;
+}
+.text-center img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  left: -9999em;
+}
+.image-left {
+  margin-right: 20px;
+}
+.image-right {
+  margin-left: 20px;
+}
+/* =======================
+ * PowerToWeb - Grid
+ * =======================*/
+.c1 {
+  width: 8.33333333%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c2 {
+  width: 16.66666667%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c3 {
+  width: 25%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c4 {
+  width: 33.33333333%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c5 {
+  width: 41.66666667%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c6 {
+  width: 50%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c7 {
+  width: 58.33333333%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c8 {
+  width: 66.66666667%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c9 {
+  width: 75%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c10 {
+  width: 83.33333333%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c11 {
+  width: 91.66666667%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.c12 {
+  width: 100%;
+  min-height: 1px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.row:before,
+.clearfix:before,
+.row:after,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+.grid {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.wfull {
+  width: 100%;
+  max-width: 100%;
+}
+.w320 {
+  max-width: 320px;
+}
+.w640 {
+  max-width: 640px;
+}
+.w960 {
+  max-width: 960px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.row .row {
+  width: auto;
+  margin: 0 -20px;
+}
+.end {
+  float: right !important;
+}
+/* =Media query for 960 Screens - sets nested grids to 100%
+-------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .row .row .c1,
+  .row .row .c2,
+  .row .row .c3,
+  .row .row .c4,
+  .row .row .c5,
+  .row .row .c6,
+  .row .row .c7,
+  .row .row .c8,
+  .row .row .c9,
+  .row .row .c10,
+  .row .row .c11,
+  .row .row .c12 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .row .row > div:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+/* =Media query for iPad and tablets
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation: portrait) {
+  .row {
+    margin-bottom: 0 !important;
+  }
+  .c1,
+  .c2,
+  .c3,
+  .c4,
+  .c5,
+  .c6,
+  .c7,
+  .c8,
+  .c9,
+  .c10,
+  .c11,
+  .c12 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+/* =========================
+ * PowerToWeb - Print Styles
+ * =========================*/
+@media print {
+  * {
+    background: transparent;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100%;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
