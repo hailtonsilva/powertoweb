@@ -50,97 +50,106 @@
       </div>
    </div>
    
-    <div class="grid-1200">
-  <div class="row">
-    <div class="column7 padding-left16">
-      <h2 class="big bold">A versatile CSS <br>Framework. Simple, <br>light and <br>responsive!</h2>
-      <a href="./docs"><button class="border-radius4" style="font-size:19px;">Get Started</button></a>
-    </div>
-    <div class="column5">
-      <img src="./img/powertocss-mascot.svg" class="displayed">
-    </div>
-  </div>
-</div>
-<div class="grid-full quick-start">
-  <div class="grid-1200">
-    <div class="row">
-      <div class="column3 text-right">
-        <h2 class="bold">Quick<br><span class="blink">__</span>start</h2>
-      </div>
-      <div class="column9">
-        <div class=" light"><p>Add the line of code bellow inside your HTML <code>head</code> tag or <a href="http://powertoweb.com/powertocss/starter-kit.zip">download the starter kit</a></p></div>
-        <p><code>
-           &lt;link rel="stylesheet" href="http://powertoweb.com/powertocss/css/powertocss.css"&gt;
-        </code></p>
-        <div class=" light">
-          <a href="./docs"><button class="button-blue border-radius4">Read the documentation</button></a> to get more details
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-   
  </header>
 
 
   
   <div class="grid-1200">
-    <div class="row">
       <div class="row">
- <div class="column12 text-center">
-  <h2 class="big">Discover Why It is So Great</h2>
-  <p class="lead text-center">Learn more about how to use PowerToCSS, and why you should give it a try.</p>
- </div>
+        <div class="column3"><div class="side-menu"><b>Setup</b><br>
+
+<a href="./docs">Getting Started</a><br>
+<a href="./docs-basic-setup">Basic Setup</a><br>
+
+<b>Components</b><br>
+
+<a href="./docs-global">Global</a><br>
+<a href="./docs-lists">Lists </a><br>
+<a href="./docs-blockquotes">Blockquotes </a><br>
+<a href="docs-code">Code </a><br>
+
+<a href="./docs-nav">Nav </a><br>
+<a href="./docs-forms">Forms </a><br>
+<a href="./docs-buttons">Buttons </a><br>
+<a href="./docs-helpers">Helpers</a><br>
+<a href="./docs-grid">Grid </a><br>
+<a href="./docs-print">Print </a><br>
+
+<b>JS Helpers (js addons)</b>
+</div></div>
+        <div class="column9"><h2>Buttons</h2>
+<p class="lead">Buttons are a good way to present links or submission buttons on forms. Powertocss provide the basis you need to create and tweak buttons easily</p>
+
+<h3>Simple button</h3>
+<p>By default Powertocss buttons has a grey background and a dark font color:</p>
+<button class="button">Button</button>
+
+<p><br>
+Markup:</p>
+<pre><code>&lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
+&lt;!-- Or --&gt;
+&lt;a class=&quot;button&quot;&gt;Button&lt;/a&gt;</code></pre>
+<h3>Composed button</h3>
+<p>Adding more predefined classes to the buttons you can extend the look of them:</p>
+<button class="button button-blue border-radius8">Button Blue Big Radius</button>
+
+<p><br>
+Markup:</p>
+<pre><code>&lt;button class=&quot;button button-blue border-radius8&quot;&gt;Blue&lt;/button&gt;</code></pre>
+<h3>Rounded corner buttons</h3>
+<p>We have provided different border radius to the buttons:</p>
+<button class="button border-radius4">Small Radius</button>
+
+<button class="button border-radius8">Big Radius</button>
+
+<button class="button border-radius16">XBig Radius</button>
+
+<p><br>
+Markup:</p>
+<pre><code>&lt;button class=&quot;button border-radius4&quot;&gt;Small Radius&lt;/button&gt;
+&lt;button class=&quot;button border-radius8&quot;&gt;Big Radius&lt;/button&gt;
+&lt;button class=&quot;button border-radius16&quot;&gt;XBig Radius&lt;/button&gt;</code></pre>
+<h3>Colored buttons</h3>
+<p>Rather than functional classes we decided to create more flexible classes. So, for example, instead of creating the traditional classes like this <code>button-success</code> we decided to <code>button-green</code> to be easy to memorize and to let you decide if you want to use it to a success message or to an other thing. For example you can use it as a login button. </p>
+<table>
+<thead>
+<tr>
+<th align="left">Buttons</th>
+<th align="left">Markup</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><button class="button button-blue">Blue</button></td>
+<td align="left"><code>&lt;button class=&quot;button button-blue&quot;&gt;Blue&lt;/button&gt;</code></td>
+</tr>
+<tr>
+<td align="left"><button class="button button-red">red</button></td>
+<td align="left"><code>&lt;button class=&quot;button button-red&quot;&gt;red&lt;/button&gt;</code></td>
+</tr>
+<tr>
+<td align="left"><button class="button button-orange">orange</button></td>
+<td align="left"><code>&lt;button class=&quot;button button-orange&quot;&gt;orange&lt;/button&gt;</code></td>
+</tr>
+<tr>
+<td align="left"><button class="button button-green">green</button></td>
+<td align="left"><code>&lt;button class=&quot;button button-green&quot;&gt;green&lt;/button&gt;</code></td>
+</tr>
+<tr>
+<td align="left"><button class="button button-black">black</button></td>
+<td align="left"><code>&lt;button class=&quot;button button-black&quot;&gt;black&lt;/button&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Disabled status</h3>
+<p>Just add the <code>button button-disabled</code> class to create a disabled button</p>
+<button class="button button-disabled border-radius4">Disabled</button>
+
+<p><br>
+Markup:</p>
+<pre><code>&lt;button class=&quot;button button-disabled border-radius4&quot;&gt;Disabled&lt;/button&gt;</code></pre>
 </div>
-
-<div class="row text-center">
- <div class="column3 padding0_16">
-   <img src="img/feather.svg" class="displayed" width="130">
-   <h4>Lightweight</h4>
-   <p>Lightweight like a plume! Solid as a rock! A well designed CSS framework, based on the principles of <abbr title="Scalable and Modular Architecture for CSS">SMACSS</abbr> and <abbr title="Don't Repeat Yourself">DRY</abbr>. We analyze every character of our code!</p>
- </div>
-
- <div class="column3 padding0_16">
-   <img src="img/book.svg" class="displayed" width="130">
-   <h4>Easy to Learn</h4>
-   <p>Here, a column name is <code>.column</code>, a button name is <code>.button</code>, a text colored blue is <code>.text-blue</code>. We try to keep things Simple, Easy and Memorable.</p>
- </div>
-
- <div class="column3 padding0_16">
-   <img src="img/paintbrush.svg" class="displayed" width="130">
-   <h4>Themeable</h4>
-   <p>PowerToCSS provide the base you need to Start and Extend your Project. Sure you can contribute to the community, by adding new themes and new components to the framework.</p>
- </div>
- <div class="column3 padding0_16">
-   <img src="img/rocket.svg" class="displayed" width="130">
-   <h4>Blazing Fast</h4>
-   <p>It&#39;s as fast as a rocket! Fast to load, fast to learn and fast to develop. We believe Frameworks should be simple, a starting point for your designs, not the hole design itself.</p>
- </div>
-</div>
-
-
-
-<div id="quotes" class="row text-center">
-<p>
-<small>Random quotes </small><br>
-<em>
-    <script language="JavaScript">
-      <!--
-      var r_text = new Array ();
-      r_text[0] = "\"Learning never exhausts the mind.\" Leonardo da Vinci";
-      r_text[1] = "\"We cannot solve our problems with the same thinking we used when we created them.\" Albert Einstein";
-      r_text[2] = "\"Coming together is a beginning; keeping together is progress; working together is success.\" Henry Ford";
-      var quote = Math.floor(3*Math.random())
-
-      document.write(r_text[quote]);
-      //-->
-    </script>
-  </em>
-  </p>
-  </div>
-
-    </div>
+      </div>
   </div>
   
 

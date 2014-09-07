@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8">
@@ -10,18 +10,22 @@
     <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    
+
     <title>PowerToCSS - Grid Demo</title>
     <meta name="description" content="PowerToCSS - Grid Demo">
 
     <link rel="stylesheet" href="./css/powertocss.css">
     <link rel="stylesheet" href="./css/standard-theme.css">
-    
-    
+    <link rel="stylesheet" href="./octicons/octicons.css">
+
   </head>
+
 <body>
+ <div id="top" class="grid-full">
+    Powertoweb   |   Powertocss   |   Github   |   Facebook   |   Chat
+ </div>
  <header id="header" class="header-powertocss text-white">
-   <div class="grid-960">
+   <div class="grid-1200">
      <div class="row">
         <div class="column4">
           <h1 class="logo left">
@@ -31,79 +35,136 @@
           </h1>
         </div>
        <div class="column8 end">
-         <nav class="menu right">
-           <label class="toggle-mobile-menu" for="toggle-mobile-menu">&#9776; MENU</label>
-            <input id="toggle-mobile-menu" type="checkbox"/>
-            <ul>
+         <nav>
+            <ul class="nav nav-custom inline right margin8_0">
+              <label class="toggle-mobile-menu" for="toggle-mobile-menu">&#9776; MENU</label>
+              <input id="toggle-mobile-menu" type="checkbox"/>
               <li><a href="./">Home</a></li>
-             <li><a href="./grid">Grid</a></li>
-             <li><a href="./docs">Docs</a></li>
-             <li><a href="./starter-kit"><button>Starter Kit</button></a></li>
-             <!-- <li><a href="https://github.com/powertoweb/powertocss/" target="_blank"><button>Github</button></a></li> -->
+              <li><a href="./docs">Docs</a></li>
+              <li><a href="./grid">Demo Grid</a></li>
+              <li><a href="./starter-kit">Starter Kit</a></li>
+              <li><a class="button border-radius4" href="https://github.com/powertoweb/powertocss/fork" target="_blank">Fork <span class="octicon octicon-mark-github"></span></a></li>
            </ul>
-         </nav> 
+         </nav>
        </div>
       </div>
    </div>
    
  </header>
- <div class="grid-960">
-   <div class="row">
- 	   <div class="grid-960 demo text-center bold">
+
+
+  
+  <div class="grid-1200 demo text-center bold">
+	<h1>1200 Grid</h1>
+
+	<div class="row">
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8 end"><span class="demo">.column2</span></div>
+	</div>
+
+	<div class="row">
+		<div class="column5 padding0_8"><span class="demo">.column5</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column5 padding0_8 end"><span class="demo">.column5</span></div>
+	</div>
+
+	<div class="row">
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column6 padding0_8"><span class="demo">.column6</span></div>
+		<div class="column3 padding0_8 end"><span class="demo">.column3</span></div>
+	</div>
+
+</div>
+
+
+<div class="grid-full demo text-center bold">
+	<h1>Full Page Grid</h1>
+
+	<div class="row">
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8 end"><span class="demo">.column2</span></div>
+	</div>
+
+	<div class="row">
+		<div class="column5 padding0_8"><span class="demo">.column5</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column5 padding0_8 end"><span class="demo">.column5</span></div>
+	</div>
+
+	<div class="row">
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column6 padding0_8"><span class="demo">.column6</span></div>
+		<div class="column3 padding0_8 end"><span class="demo">.column3</span></div>
+	</div>
+
+</div>
+
+
+
+
+<div class="grid-960 demo text-center bold">
 	<h1>960 Grid</h1>
 
 	<div class="row">
-		<div class="column2"><span class="demo">.column2</span></div>
-		<div class="column2"><span class="demo">.column2</span></div>
-		<div class="column2"><span class="demo">.column2</span></div>
-		<div class="column2"><span class="demo">.column2</span></div>
-		<div class="column2"><span class="demo">.column2</span></div>
-		<div class="column2 end"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column2 padding0_8 end"><span class="demo">.column2</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column3"><span class="demo">.column3</span></div>
-		<div class="column3"><span class="demo">.column3</span></div>
-		<div class="column3"><span class="demo">.column3</span></div>
-		<div class="column3 end"><span class="demo">.column3</span></div>
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column3 padding0_8 end"><span class="demo">.column3</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column4"><span class="demo">.column4</span></div>
-		<div class="column4"><span class="demo">.column4</span></div>
-		<div class="column4 end"><span class="demo">.column4</span></div>
+		<div class="column4 padding0_8"><span class="demo">.column4</span></div>
+		<div class="column4 padding0_8"><span class="demo">.column4</span></div>
+		<div class="column4 padding0_8 end"><span class="demo">.column4</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column5"><span class="demo">.column5</span></div>
-		<div class="column2"><span class="demo">.column2</span></div>
-		<div class="column5 end"><span class="demo">.column5</span></div>
+		<div class="column5 padding0_8"><span class="demo">.column5</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column5 padding0_8 end"><span class="demo">.column5</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column3"><span class="demo">.column3</span></div>
-		<div class="column6"><span class="demo">.column6</span></div>
-		<div class="column3 end"><span class="demo">.column3</span></div>
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column6 padding0_8"><span class="demo">.column6</span></div>
+		<div class="column3 padding0_8 end"><span class="demo">.column3</span></div>
 	</div>
 
 	<h2>Nested Grid</h2>
 
 	<div class="row">
-		<div class="column7"><span class="demo">.column7</span></div>
-		<div class="column5 end">
+		<div class="column7 padding0_8"><span class="demo">.column7</span></div>
+		<div class="column5 padding0_8 end">
 			<div class="row">
-				<div class="column6"><span class="demo">.column6</span></div>
-				<div class="column6 end"><span class="demo">.column6.end</span></div>
+				<div class="column6 padding0_8"><span class="demo">.column6</span></div>
+				<div class="column6 padding0_8 end"><span class="demo">.column6.end</span></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="column6"><span class="demo">.column6</span></div>
-		<div class="column6 end">
+		<div class="column6 padding0_8"><span class="demo">.column6</span></div>
+		<div class="column6 padding0_8 end">
 			<div class="row">
-				<div class="column7"><span class="demo">.column7</span></div>
-				<div class="column5 end"><span class="demo">.column5.end</span></div>
+				<div class="column7 padding0_8"><span class="demo">.column7</span></div>
+				<div class="column5 padding0_8 end"><span class="demo">.column5.end</span></div>
 			</div>
 		</div>
 	</div>
@@ -111,14 +172,14 @@
 	<h2>Using Spacers In-Between</h2>
 
 	<div class="row">
-		<div class="column4"><span class="demo">.column4</span></div>
-		<div class="column4 end"><span class="demo">.column4.end</span></div>
+		<div class="column4 padding0_8"><span class="demo">.column4</span></div>
+		<div class="column4 padding0_8 end"><span class="demo">.column4.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column3"><span class="demo">.column3</span></div>
-		<div class="column4"><span class="demo">.column4</span></div>
-		<div class="column3 end"><span class="demo">.column3.end</span></div>
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column4 padding0_8"><span class="demo">.column4</span></div>
+		<div class="column3 padding0_8 end"><span class="demo">.column3.end</span></div>
 	</div>
 
 
@@ -130,27 +191,27 @@
 	<h1>640 Grid</h1>
 
 	<div class="row">
-		<div class="column12 end"><span class="demo">.column12.end</span></div>
+		<div class="column12 padding0_8 end"><span class="demo">.column12.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column2"><span class="demo">.column2</span></div>
-		<div class="column10 end"><span class="demo">.column10.end</span></div>
+		<div class="column2 padding0_8"><span class="demo">.column2</span></div>
+		<div class="column10 padding0_8 end"><span class="demo">.column10.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column3"><span class="demo">.column3</span></div>
-		<div class="column9 end"><span class="demo">.column9.end</span></div>
+		<div class="column3 padding0_8"><span class="demo">.column3</span></div>
+		<div class="column9 padding0_8 end"><span class="demo">.column9.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column4"><span class="demo">.column4</span></div>
-		<div class="column8 end"><span class="demo">.column8.end</span></div>
+		<div class="column4 padding0_8"><span class="demo">.column4</span></div>
+		<div class="column8 padding0_8 end"><span class="demo">.column8.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column5"><span class="demo">.column5</span></div>
-		<div class="column7 end"><span class="demo">.column7.end</span></div>
+		<div class="column5 padding0_8"><span class="demo">.column5</span></div>
+		<div class="column7 padding0_8 end"><span class="demo">.column7.end</span></div>
 	</div>
 
 </div>
@@ -160,36 +221,70 @@
 	<h1>320 Grid</h1>
 
 	<div class="row">
-		<div class="column6"><span class="demo">.column6</span></div>
-		<div class="column6 end"><span class="demo">.column6.end</span></div>
+		<div class="column6 padding0_8"><span class="demo">.column6</span></div>
+		<div class="column6 padding0_8 end"><span class="demo">.column6.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column7"><span class="demo">.column7</span></div>
-		<div class="column5 end"><span class="demo">.column5.end</span></div>
+		<div class="column7 padding0_8"><span class="demo">.column7</span></div>
+		<div class="column5 padding0_8 end"><span class="demo">.column5.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column8"><span class="demo">.column8</span></div>
-		<div class="column4 end"><span class="demo">.column4.end</span></div>
+		<div class="column8 padding0_8"><span class="demo">.column8</span></div>
+		<div class="column4 padding0_8 end"><span class="demo">.column4.end</span></div>
 	</div>
 
 	<div class="row">
-		<div class="column9"><span class="demo">.column9</span></div>
-		<div class="column3 end"><span class="demo"><small>.column3.end</small></span></div>
+		<div class="column9 padding0_8"><span class="demo">.column9</span></div>
+		<div class="column3 padding0_8 end"><span class="demo"><small>.column3.end</small></span></div>
 	</div>
 
 </div>
- 	</div>
- </div>
-<footer id="footer">		
+  
+
+
+<div class="row pre-footer">
+	<div class="grid-full">
+		<div class="column6 padding32">
+		  <h3 class=""><i>We get power from the best of the bests in order to provide it to you!</i></h3>
+		  <small><i>Big thanks to HTML5 Boilerplate, Normalize.css, LESS and our daily Coffee!</i></small>
+		</div>
+		<div class="column6 padding16">
+			<div class="row text-center"><p>Built on top of great open source technology</p>
+			  <div class="row">
+				  <div class="column4">
+				    <img src="./img/html5boilerplate.svg" width="50" class="displayed">
+				    <small> HTML5 Boilerplate</small>
+				  </div>
+				  <div class="column4">
+				    <img src="./img/less.svg" width="110" class="displayed">
+				    <small>less</small>
+				  </div>
+				  <div class="column4">
+				    <br><img src="./img/normalize.svg" width="210" class="displayed">
+				    <small>normalize</small>
+				  </div>
+			  </div>
+			 
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="text-center">
       <div class="row">
-        <div class="grid-960">
-          <p> Made in Lisbon by <a href="http://powertoweb.com" target="_blank">PowerToWeb</a><br>
-          © 2009–2014 PowerToWeb. All rights reserved.
+        <div class="grid-1200">
+          <p><a href="./">Home</a> | <a href="https://github.com/powertoweb/powertocss" target="_blank" > Github</a> | <a href="https://github.com/powertoweb/powertocss/issues?milestone=none&state=open" target="_blank">Issues</a> | <a href="mailto:geral@powertoweb.com" target="_top">Join Us</a> <br>
+          Created in Lisbon with <span class="octicon octicon-heart"></span> and some coffee by PowerToWeb<br>
+          © 2014 PowerToWeb. Licensed under MIT license
           </p>
         </div>
        </div>
 </footer>
+
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/nav-helper.js"></script>
+<script src="./js/scripts.js"></script>
 </body>
 </html>

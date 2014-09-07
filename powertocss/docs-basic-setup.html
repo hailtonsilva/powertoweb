@@ -77,7 +77,70 @@
 
 <b>JS Helpers (js addons)</b>
 </div></div>
-        <div class="column9"><h1>404</h1><h3>Whoops. Looks like what you're looking for can't be found.</h3></div>
+        <div class="column9"><h2>Basic Setup</h2>
+<p>Once you have downloaded the starter kit, follow these instructions to make things fit the needs of your project.</p>
+<h3>Configuring everything</h3>
+<p>First make sure you have have a good code editor. We recommend <a href="https://atom.io" title="Atom.io">Atom.io</a> because it&#39;s an awesome code editor and it&#39;s free. Open Atom.io and make sure your HTML5 has Powertocss loaded:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;...&lt;/title&gt;
+
+        &lt;!-- POWERTOCSS Styles and YOUR THEME styles --&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;PATH_TO/powertocss.min.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;PATH_TO/your-theme.css&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        ...
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p><small><b>PS:</b> Make sure you load <code>powertocss.min.css</code> before <code>your-theme.css</code> so your-theme is able to override powertocss.</small></p>
+<h3>Responsive Utility (Optional)</h3>
+<p>Make it responsive by adding this in your &#39;head&#39; tag:</p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code></pre>
+<p><small><b>NOTE:</b> By default, in the Starter Kit we have added the Viewport Meta Element  inside your <code>head</code> tag to make it responsive. If you plan to make a non-responsive site, just remove it and also see the Non-responsive Columns Description to see how to configure it</small></p>
+<h3>Add the Grid</h3>
+<p>Add the grid* and the row class to your <code>div</code> tag. Just like the example bellow:
+<br>
+<small><i><b>PS:</b> You have 5 grid alternatives, (<b>grid-1200, grid-full, grid-960, grid-640 and grid-320</b>). Just add the one you prefer. All them have different widths</i></small></p>
+<pre><code>&lt;body&gt;
+    &lt;div class=&quot;grid-960&quot;&gt;
+       &lt;div class=&quot;row&quot;&gt;
+          Your Body Content
+       &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+<h3>Get your elements in place</h3>
+<h4>Responsive Columns</h4>
+<p>Now that you have added the grid class to your div, it&#39;s time to get to know our classes to position the elements in the page: the <strong>columns</strong>.</p>
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;column4 padding0_8&quot;&gt;
+        &lt;span class=&quot;demo&quot;&gt;.column4&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;column8 padding0_8&quot;&gt;
+        &lt;span class=&quot;demo&quot;&gt;.column8&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><strong>OBS:</strong> Replace the spans with your own contend </p>
+<p><strong>Will Produce this:</strong></p>
+<div class="row">
+  <div class="column4 padding0_8"><span class="demo">.column4</span></div>
+  <div class="column8 padding0_8"><span class="demo">.column8</span></div>
+</div>
+
+
+<h4>Non-responsive Columns</h4>
+<p><i><em>If you don&#39;t want the responsive capability, just don&#39;t add de <b>meta viewport content</b> and also prefix the columns <strong>column1, column2, column3, etc</strong> with the <strong>non-responsive-</strong> text. For example: use <strong>class=&quot;non-responsive-column8&quot;</strong>, instead of <b>class=&quot;column8&quot;*</em></b>
+</i></p>
+<blockquote>
+<p><strong>TIP:</strong> To mastery the PowerToCSS Grids, just memorize these self explanatory elements:
+<br>1) The  <strong>grid-1200</strong>, <strong>grid-full</strong>, <strong>grid-960</strong>, <strong>grid-640</strong> and <strong>grid-320</strong>
+<br>2) The <strong>row</strong> after the grid class
+<br>3) And the <strong>column1, column2, column3, column4, column5, column6, column7, column8, column9, column10, column11, column12</strong> to structure your page by putting your elements in place</p>
+</blockquote>
+<p>Now that you know how to configure your project it&#39;s time to check the components, starting with the <a class="button button-red" href="./docs-global">Global Component</a></p>
+</div>
       </div>
   </div>
   

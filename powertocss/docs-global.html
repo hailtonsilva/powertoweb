@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+    <title>PowerToCSS - A versatile CSS Framework. Simple, light and responsive!</title>
+    <meta name="description" content="PowerToCSS is a versatile CSS Framework. Simple, light and responsive!">
+
+    <link rel="stylesheet" href="./css/powertocss.css">
+    <link rel="stylesheet" href="./css/standard-theme.css">
+    <link rel="stylesheet" href="./octicons/octicons.css">
+
+  </head>
+
+<body>
+ <div id="top" class="grid-full">
+    Powertoweb   |   Powertocss   |   Github   |   Facebook   |   Chat
+ </div>
+ <header id="header" class="header-powertocss text-white">
+   <div class="grid-1200">
+     <div class="row">
+        <div class="column4">
+          <h1 class="logo left">
+            <a href="./">
+             <img src="img/logo.png" alt="PowerToCSS">
+           </a>
+          </h1>
+        </div>
+       <div class="column8 end">
+         <nav>
+            <ul class="nav nav-custom inline right margin8_0">
+              <label class="toggle-mobile-menu" for="toggle-mobile-menu">&#9776; MENU</label>
+              <input id="toggle-mobile-menu" type="checkbox"/>
+              <li><a href="./">Home</a></li>
+              <li><a href="./docs">Docs</a></li>
+              <li><a href="./grid">Demo Grid</a></li>
+              <li><a href="./starter-kit">Starter Kit</a></li>
+              <li><a class="button border-radius4" href="https://github.com/powertoweb/powertocss/fork" target="_blank">Fork <span class="octicon octicon-mark-github"></span></a></li>
+           </ul>
+         </nav>
+       </div>
+      </div>
+   </div>
+   
+ </header>
+
+
+  
+  <div class="grid-1200">
+      <div class="row">
+        <div class="column3"><div class="side-menu"><b>Setup</b><br>
+
+<a href="./docs">Getting Started</a><br>
+<a href="./docs-basic-setup">Basic Setup</a><br>
+
+<b>Components</b><br>
+
+<a href="./docs-global">Global</a><br>
+<a href="./docs-lists">Lists </a><br>
+<a href="./docs-blockquotes">Blockquotes </a><br>
+<a href="docs-code">Code </a><br>
+
+<a href="./docs-nav">Nav </a><br>
+<a href="./docs-forms">Forms </a><br>
+<a href="./docs-buttons">Buttons </a><br>
+<a href="./docs-helpers">Helpers</a><br>
+<a href="./docs-grid">Grid </a><br>
+<a href="./docs-print">Print </a><br>
+
+<b>JS Helpers (js addons)</b>
+</div></div>
+        <div class="column9"><h2><h2 class="bold">Global</h2></h2>
+<p>Provides the base styles for all HTML elements inclusive the CSS resets styles. With the Global Styles we have defined these elements:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Elements</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Normalize</td>
+<td align="left">Resets some browsers default styles</td>
+</tr>
+<tr>
+<td align="left">Headings</td>
+<td align="left">From <code>h1</code> to <code>h6</code>. We have styled them to better describe the documents structure and organization</td>
+</tr>
+<tr>
+<td align="left">Font styles</td>
+<td align="left">Default font-size, color, line-height, italics, abbreviations <code>abbr</code>, mark, etc</td>
+</tr>
+<tr>
+<td align="left">Horizontal rule</td>
+<td align="left">Reset the <code>hr</code> and then prettify it</td>
+</tr>
+<tr>
+<td align="left">Paragraphs</td>
+<td align="left">Line height and margin are defined here</td>
+</tr>
+<tr>
+<td align="left">Links</td>
+<td align="left">Default link styles, <code>a:link</code>, <code>a:hover</code>, <code>a:focus</code> and <code>a:active</code></td>
+</tr>
+<tr>
+<td align="left">Tables<em>*</em></td>
+<td align="left">Minimal table style defined here</td>
+</tr>
+<tr>
+<td align="left">Responsive images</td>
+<td align="left">By default all the images are responsive</td>
+</tr>
+</tbody>
+</table>
+<h3><h3 class="bold">Normalize</h3></h3>
+<p>Here we Resets some browsers default styles to fit ours needs and to keep things consistent across browsers. The Normalize component is based in the <a href="http://necolas.github.io/normalize.css/" title="Normalize.css">Normalize.css</a> with some modifications, so we provide below their UI Tests:</p>
+<h3><h3 class="bold">Headings</h3></h3>
+<p>Usually used to structure and organize the information on the pages following some hierarchy. We try to keep that hierarchy. See the example bellow:</p>
+<h1>This is Heading 1 (h1)</h1>
+<h2>This is Heading 2 (h2)</h2>
+<h3>This is Heading 3 (h3)</h3>
+<h4>This is Heading 4 (h4)</h4>
+<h5>This is Heading 5 (h5)</h5>
+<h6>This is Heading 6 (h6)</h6>
+<p><br></p>
+<h3><h3 class="bold">Font Styles</h3></h3>
+<p>This is a NORMAL font.</p>
+<p><em>This is an italic text and it&#39;s marked with <code>i</code> tag.</em></p>
+<p>The abbreviation is this <abbr title="PowerToCSS Abbreviation">PTCSS ABBR</abbr> and it&#39;s marked with <code>abbr</code> tag.</p>
+<p><mark>This is a text marked with <code>mark</code> tag</mark></p>
+<p><small>This is a <code>small</code> text</small></p>
+<p><sub>This is a <code>sub</code> text</sub> &amp; <sup>this is a <code>sup</code> text</sup></p>
+<p><dfn>This is a DEFINITION and it&#39;s marked with <code>dfn</code> tag</dfn></p>
+<h3><h3 class="bold">Horizontal rule example</h3></h3>
+<hr>
+<h3><h3 class="bold">Paragraphs example</h3></h3>
+<p>This is a PARAGRAPH and it&#39;s marked with <code>p</code> tag. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3><h3 class="bold">Links</h3></h3>
+<p><a href="#">This is a link example</a></p>
+<h3><h3 class="bold">Tables</h3></h3>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>column 1 is</td>
+<td align="center">left-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>column 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>column 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<h3><h3 class="bold">Responsive Image</h3></h3>
+<p>By default all the images are responsive. The tag for the image is <code>img</code>.</p>
+<p><img src="./img/despicable-me-2-minions.jpg" alt="Despicable me Image example"></p>
+</div>
+      </div>
+  </div>
+  
+
+
+<div class="row pre-footer">
+	<div class="grid-full">
+		<div class="column6 padding32">
+		  <h3 class=""><i>We get power from the best of the bests in order to provide it to you!</i></h3>
+		  <small><i>Big thanks to HTML5 Boilerplate, Normalize.css, LESS and our daily Coffee!</i></small>
+		</div>
+		<div class="column6 padding16">
+			<div class="row text-center"><p>Built on top of great open source technology</p>
+			  <div class="row">
+				  <div class="column4">
+				    <img src="./img/html5boilerplate.svg" width="50" class="displayed">
+				    <small> HTML5 Boilerplate</small>
+				  </div>
+				  <div class="column4">
+				    <img src="./img/less.svg" width="110" class="displayed">
+				    <small>less</small>
+				  </div>
+				  <div class="column4">
+				    <br><img src="./img/normalize.svg" width="210" class="displayed">
+				    <small>normalize</small>
+				  </div>
+			  </div>
+			 
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="text-center">
+      <div class="row">
+        <div class="grid-1200">
+          <p><a href="./">Home</a> | <a href="https://github.com/powertoweb/powertocss" target="_blank" > Github</a> | <a href="https://github.com/powertoweb/powertocss/issues?milestone=none&state=open" target="_blank">Issues</a> | <a href="mailto:geral@powertoweb.com" target="_top">Join Us</a> <br>
+          Created in Lisbon with <span class="octicon octicon-heart"></span> and some coffee by PowerToWeb<br>
+          © 2014 PowerToWeb. Licensed under MIT license
+          </p>
+        </div>
+       </div>
+</footer>
+
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/nav-helper.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
