@@ -19,6 +19,8 @@ box-shadow: 0 0 3px rgba(153,153,153,0.75);
 }
 #top > a {color: #42CA9E;}
 
+.nav {background: #fff;border-radius: 3px;}
+
 a {
 color: #FF6649;
 }
