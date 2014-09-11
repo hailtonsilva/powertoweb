@@ -1,0 +1,45 @@
+body {font-size: 16px;
+font-weight: 400;letter-spacing: 0.15px;}
+
+#header, #contatos {
+background-image: url(../img/lines.png),linear-gradient(30deg,#2276ad,#6ec654);
+background-color: #2276ad;
+box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2),0 1px 2px rgba(0,0,0,0.25);
+color: #fff;
+}
+#contatos {padding: 30px;}
+#header h1, #header h2{text-shadow: 1px 1px 2px rgba(0,0,0,0.25);}
+#section-logo-nav {margin-bottom: 159px;}
+
+#top {
+color: #3CC1D3;
+background: rgba(25, 28, 29, 0.13);
+position: relative;
+box-shadow: 0 0 3px rgba(153,153,153,0.75);
+}
+#top > a {color: #42CA9E;}
+
+a {
+color: #FF6649;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+}
+img.pulse {
+  vertical-align: middle;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  animation: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+button, .button {
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.25);
+}
+
+#sobre, #solucoes, #clientes {padding: 100px 0;}
+#solucoes, #clientes {padding-top: 50px; margin-bottom: 100px;}
+
+#clientes img {float: left; max-width: 200px;}

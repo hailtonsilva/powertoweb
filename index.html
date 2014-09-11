@@ -12,28 +12,28 @@
     <meta name="ROBOTS" CONTENT="INDEX, FOLLOW">
     <!--Use media queries if you are using the grid-->
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="old-powertocss/css/powertocss.css">
-    <link rel="stylesheet" type="text/css" href="custom/css/hailton.com.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/powertocss.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ptw-theme.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/animatecss/3.1.1/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
-  <body id="block-body">
-    <header class="header-powertoweb">
-      <div class="grid w960">
-        
+  <body>
+    <header id="header">
+      <div id="top" class="grid-full">
+        Powertoweb   |   Powertocss   |   Github   |   Facebook   |   Chat
+      </div>
+      <div id="section-logo-nav" class="grid-960">
           <div class="row">
-            <div class="c12 text-center">
-              <div class="c4">
-                <h1 class="logo left"><a href="./index.html"><img src="custom/img/logo.png"></a></h1>
+            <div class="column12 text-center">
+              <div class="column4">
+                <h1 class="logo left"><a href="./index.html"><img src="assets/img/logo.png"></a></h1>
               </div>
-
-              <!-- The Menu NAV -->
-              <nav class="menu right">
-              	
+              <nav>
+              	<ul class="nav nav-custom inline right margin8_0">
               	<label for="toggle-mobile-menu">&#9776; MENU</label>
       					<input id="toggle-mobile-menu" type="checkbox"/>
       					
-      				  <ul>
       				  	<li><a href="#home">Home</a></li>
       				  	<li><a href="#sobre">Sobre</a></li>
       				  	<li><a href="#solucoes">Solu&ccedil;&otilde;es</a></li>
@@ -41,135 +41,106 @@
       				  	<li><a href="#contatos">Contatos</a></li>
       				  </ul>
       				</nav> 
-              
             </div>
           </div>
+      </div> 
+      <div class="grid-960">
           <div class="row">
-            <div class="c12 text-center"> 
+            <div class="column12 text-center"> 
               <div>
-                <div class="jumbo-logo"><a href="#sobre"><img alt="PowerToWeb" title="Respirámos Web!" class="pulse" src="custom/img/PowerToWeb-jumbo-logo.png"></a></div>
-
-                <h1><strong>PowerToWeb</strong></h1>
-	              <h2 class="animated fadeInDown animated-delay-two">
-                Respirámos Web! E estamos empenhados em criar excelentes experiências Web</h2><br><br><br>
-
-                <a class="control-button arrow-down text-center" href="#sobre">.</a>
+                <a href="#sobre">
+                  <img alt="PowerToWeb" title="Respirámos Web!" width="160" class="pulse displayed" src="assets/img/PowerToWeb-jumbo-logo.png">
+                </a>
+                <h1 class="bold">PowerToWeb</h1>
+  	              <h2 class="bold animated fadeInDown animated-delay-two">
+                  Respirámos Web! E estamos empenhados em criar excelentes experiências Web</h2>
+                  <br><br><br>
                </div>
             </div>
           </div>
         
       </div>
     </header>
-    <div class="grid w960">
+
+    <div class="grid-960">
       <div class="row">
 
-        
-        <div id="sobre" class="c12">
-
-          
-
-        	<h2  class="text-center">Somos "Web Geeks" com<a href="#solucoes"> Solu&ccedil;&otilde;es</a><br> Profissionais e Inovadoras</h2>
-          <ul>
-            <ol class="c4 text-center"><img class="imgCenter" src="custom/img/powertoweb-about.png"></ol>
-            <ol class="c8">
-              <p><br>Somos jovens, dinâmicos e inovadores. Trabalhamos em rede, valorizamos a diversidade e estamos abertos a novas ideias. Por sermos essencialmente OpenSource, adaptamos rapidamente as exigências e tendências da Web</p>
-              <div>
-                <div>
-                <h3>Veja as nossas <a href="#solucoes">Soluções</a></h3><small>...ou se preferir, converse connosco pelo chat</small>
-  		<!--
-                <a class="lilSquares" href="http://hailton.com" target="_blank" title="Hailton Silva - UI/UX Designer and Frontend Developer">
-                  <img width="70px" height="70px" src="custom/img/hailton.jpg">
-                  <div class="text-center">Hailton<br></div>
-                </a>
-                <a class="lilSquares" href="#" title="João Rodrigues - Web Developer">
-                  <img width="70px" height="70px" src="custom/img/joao.jpg">
-                  <div class="text-center">João<br></div>
-                </a>
-                <a class="lilSquares" href="#" title="Balduíno Neves - Web Developer and System Administrator">
-                  <img width="70px" height="70px" src="custom/img/user.jpg">
-                  <div class="text-center">Balduíno<br></div>
-                </a>
-                <a class="lilSquares" href="#" title="José Évora - Frontend Developer">
-                  <img width="70px" height="70px" src="custom/img/user.jpg">
-                  <div class="text-center">José<br></div>
-                </a>
-                <a class="lilSquares" href="#contatos" title="Tu! - Temos um lugar para ti">
-                  <img width="70px" height="70px" src="custom/img/tu.jpg">
-                  <div class="text-center">Tu!<br></div>
-                </a>-->
-              </div>
-                </a>
-              </div>
-            </ol>
-          </ul>
+        <div id="sobre" class="row">
+        	<h2  class="text-center big bold">
+            Somos "Web Geeks" com <a href="#solucoes"> Solu&ccedil;&otilde;es</a><br> Profissionais e Inovadoras
+          </h2>
+          <div class="column4 text-center">
+            <img class="displayed" src="assets/img/powertoweb-about.png">
+          </div>
+          <div class="column8">
+            <p><br><br>Somos jovens, dinâmicos e inovadores. Trabalhamos em rede, valorizamos a diversidade e estamos abertos a novas ideias. Por sermos essencialmente OpenSource, adaptamos rapidamente as exigências e tendências da Web</p>
+            <a class="button button-blue border-radius8" href="#solucoes">Veja as nossas Soluções</a>
+          </div>
         </div>
-        
-        
-        
-        <div id="solucoes" class="c12">
-        	<h2  class="text-center">Solu&ccedil;&otilde;es Únicas para <a href="#clientes">Clientes</a> Espetaculares</h2>
-
-          <ul>
-            <ol class="c4">
-              <div><img src="custom/img/chat.png" class="imgCenter"></div>
-              <h3 class="text-center">Consultoria</h3>
-              <p>Começamos por ouvir o que o cliente pretende, depois avaliamos as ideias e analisámos os pontos fortes e os fracos. Depois ilustramos as mesmas num pequeno "wireframe"
-              </p>
-            </ol>
-            <ol class="c4">
-              <div><img src="custom/img/heart.png" class="imgCenter"></div>
-              <h3 class="text-center">Web Design</h3>
-              <p>Lançadas as bases do projeto na fase da consultoria, é tempo de pensarmos mais graficamente de forma a que a imagem do site ou da aplicação Web ilustre os conceitos do projeto</p>
-            </ol>
-            <ol class="c4">
-              <div><img src="custom/img/magicwand.png" class="imgCenter"></div>
-              <h3 class="text-center">Programação</h3>
-              <p>Com tudo definido no design, vem a fase do código. Esta é a fase final do projeto, a fase de implementação de todos os conceitos definidos nas fases anteriores</p>
-            </ol>
-          </ul>
+                
+        <div id="solucoes" class="column12 text-center">
+        	<h2  class="text-center big bold">Solu&ccedil;&otilde;es Únicas para <a href="#clientes">Clientes</a> Espetaculares</h2><br>
+          <div class="column4 padding16">
+            <div><img src="assets/img/chat.png" class="displayed"></div>
+            <h3 class="text-center">Consultoria</h3>
+            <p>Começamos por ouvir o que o cliente pretende, depois avaliamos as ideias e analisámos os pontos fortes e os fracos. Depois ilustramos as mesmas num pequeno "wireframe"
+            </p>
+          </div>
+          <div class="column4 padding16">
+            <div><img src="assets/img/heart.png" class="displayed"></div>
+            <h3 class="text-center">Web Design</h3>
+            <p>Lançadas as bases do projeto na fase da consultoria, é tempo de pensarmos mais graficamente de forma a que a imagem do site ou da aplicação Web ilustre os conceitos do projeto</p>
+          </div>
+          <div class="column4 padding16">
+            <div><img src="assets/img/magicwand.png" class="displayed"></div>
+            <h3 class="text-center">Programação</h3>
+            <p>Com tudo definido no design, vem a fase do código. Esta é a fase final do projeto, a fase de implementação de todos os conceitos definidos nas fases anteriores</p>
+          </div>
+          <div class="column12"><a class="button button-blue border-radius8" href="#clientes" >Conheça os nossos Clientes</a></div>
         </div>
 
-
-
-        <div id="clientes" class="c12">
-          <h2  class="text-center">Clientes em <a href="#contatos">Contato</a> com o melhor da Web</h2>
-
-          
-          <div class="c12">
-            <div class="c5">
-              <p>Os nossos clientes são um dos nossos principais pilares. Neste sentido temos como missão proporcionar-lhes o melhor serviço do mercado.
-              </p>
+        <div id="clientes" class="column12">
+          <h2  class="text-center big bold">Clientes em <a href="#contatos">Contato</a> com <br>o melhor da Web</h2>
+          <div class="column12"><br><br>
+            <div class="column5">
+              <p><br><br>Os nossos clientes são um dos nossos principais pilares. Neste sentido temos como missão proporcionar-lhes o melhor serviço do mercado.</p>
+              <div class="text-center"><a class="button button-blue border-radius8" href="#contatos" >Contacte-nos</a></div>
             </div>
-            <div class="c7" style="background:#f6f6f6;color: #999; padding: 10px;font-size:14px;">
-                <div class="Squares"><img src="custom/img/gestual.png"></div>
-                <div class="Squares"><img src="custom/img/powertocss.png"></div>
-                <div class="Squares"><img src="custom/img/eusaudavel.png"></div>
-                <div class="Squares"><img src="custom/img/commurrency.png"></div>
+            <div class="column7 text-center">
+              <div class="column6 text-center padding16"><img src="assets/img/gestual.png" class="displayed" ></div>
+              <div class="column6 text-center padding16"><img src="assets/img/powertocss.png" class="displayed" ></div>
+              <div class="column6 text-center padding16"><img src="assets/img/eusaudavel.png" class="displayed" ></div>
+              <div class="column6 text-center padding16"><img src="assets/img/commurrency.png" class="displayed" ></div>
             </div>
           </div>
         </div>
 
-
-        <div id="contatos" class="c12">
-          <h2  class="text-center">Adorámos Conversar Consigo</h2>
-          <div class="c12 header-powertoweb">
-            <div class="c5">
+        <div id="contatos" class="column12">
+          <h2  class="text-center big bold">Adorámos Conversar Consigo</h2>
+          <div class="column12">
+            <div class="column5">
               <h3>Contate-nos</h3>
               <p>Ficaremos felizes em discutir as suas necessidades específicas e oferecer uma solução a sua medida.</p>
               <br>
               <h4>+(351) 96 979 45 47</h4>
               <h4><a href="mailto:geral@powertoweb.com?Subject=Ol&aacute;" target="_top" style="color:#fff !important;">geral@powertoweb.com</a></h4>
             </div>
-            <div class="c7">
+            <div class="column7">
               <p>Use o seguinte formulário para nos enviar uma mensagem de forma rápida e instantânea:</p>
-              <form action="http://getsimpleform.com/messages?form_api_token=9a54dcda6badef2b8485a40f8c898899" method="post">
+              <form id="contactForm" action="http://getsimpleform.com/messages?form_api_token=9a54dcda6badef2b8485a40f8c898899" method="post">
                   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
                   <input type='hidden' name='redirect_to' value='http://powertoweb.com/thank-you.html' />
-                  <!-- the input fields -->
-                  <input type='text' placeholder="Nome" name='Name' />
-                  <input type='email' placeholder="E-mail" name='E-mail' />
-                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Mensagem" rows="7"></textarea>
-                  <input type='submit' class="button" value='Enviar' /><br>.
+                  <div class="row">
+                    <!-- the input fields -->
+                    <input type='text' placeholder="Nome" name='Name' required />
+                  </div>
+                  <div class="row">
+                    <input type='email' placeholder="E-mail" name='E-mail' required />
+                  </div>
+                  <div class="row">
+                    <textarea name="message" type="text" class="form-control" id="message" placeholder="Mensagem" rows="7" required ></textarea>
+                  </div>
+                  <button class="button border-radius2" type="submit" value="Submit">Enviar</button>
               </form>
             </div> 
 
@@ -177,19 +148,20 @@
         </div>
 	  </div>
     </div>
-
-    <div class="footer">
-      <div class="grid w960">
-        <div class="c12">
-          <p class="">Made in Lisbon by PowerToWeb<br>© 2009–2014 PowerToWeb. All rights reserved.</p>
+    <footer id="footer">
+      <div class="grid-960">
+        <div class="column12 text-center">
+          <p>Made in Lisbon by PowerToWeb<br>© 2009–2014 PowerToWeb. All rights reserved.</p>
           <br>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="custom/js/scroll.js"></script>
-    <script src="custom/js/menu_helper.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.js"></script>
+
     <script type='text/javascript'>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: 'd00ce29a-da7e-44cc-a89b-7b6f1ac27cc9', f: true }); done = true; } }; })();</script>
     <style type="text/css">.purechat-poweredby-container, .purechat-widget-title img {border: 0;clip: rect(0 0 0 0);height: 1px;overflow: hidden;padding: 0;position: absolute;width: 1px;left: -9999em;}</style>
   

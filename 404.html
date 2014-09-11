@@ -2,38 +2,128 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html class="no-js" lang="pt"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PowerToWeb - Powering the Web </title>
-    <meta name="description" content="PowerToWeb é um grupo focado em criar soluções web modernas">
-    <meta name="ROBOTS" CONTENT="INDEX, FOLLOW">
-    <!--Use media queries if you are using the grid-->
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="old-powertocss/css/powertocss.css">
-    <link rel="stylesheet" type="text/css" href="custom/css/hailton.com.css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/animatecss/3.1.1/animate.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+    <title>PowerToCSS - A versatile CSS Framework. Simple, light and responsive!</title>
+    <meta name="description" content="PowerToCSS is a versatile CSS Framework. Simple, light and responsive!">
+
+    <link rel="stylesheet" href="./css/powertocss.css">
+    <link rel="stylesheet" href="./css/standard-theme.css">
+    <link rel="stylesheet" href="./octicons/octicons.css">
+
   </head>
-  <body style="padding:100px 0;background: rgba(221, 236, 232, 0.12);">
 
-    <div class="grid w640 text-center">
-      <div class="row">
-        <h1 class="strong">You are lost!</h1>
-        <div class="c12">Follow these links to find your way again:</div>
-        <div class="c6"><a href="./"><h3>PowerToWeb</h3></a></div>
-        <div class="c6"><a href="./powertocss"><h3>PowerToCSS</h3></a></div>
+<body>
+ <div id="top" class="grid-full">
+    Powertoweb   |   Powertocss   |   Github   |   Facebook   |   Chat
+ </div>
+ <header id="header" class="header-powertocss text-white">
+   <div class="grid-1200">
+     <div class="row">
+        <div class="column4">
+          <h1 class="logo left">
+            <a href="./">
+             <img src="img/logo.png" alt="PowerToCSS">
+           </a>
+          </h1>
+        </div>
+       <div class="column8 end">
+         <nav>
+            <ul class="nav nav-custom inline right margin8_0">
+              <label class="toggle-mobile-menu" for="toggle-mobile-menu">&#9776; MENU</label>
+              <input id="toggle-mobile-menu" type="checkbox"/>
+              <li><a href="./">Home</a></li>
+              <li><a href="./docs">Docs</a></li>
+              <li><a href="./grid">Demo Grid</a></li>
+              <li><a href="./starter-kit">Starter Kit</a></li>
+              <li><a class="button border-radius4" href="https://github.com/powertoweb/powertocss/fork" target="_blank">Fork <span class="octicon octicon-mark-github"></span></a></li>
+           </ul>
+         </nav>
+       </div>
       </div>
-    </div> 
+   </div>
+   
+ </header>
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="custom/js/scroll.js"></script>
-    <script src="custom/js/menu_helper.js"></script>
-    <script type='text/javascript'>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: 'd00ce29a-da7e-44cc-a89b-7b6f1ac27cc9', f: true }); done = true; } }; })();</script>
-    <style type="text/css">.purechat-poweredby-container, .purechat-widget-title img {border: 0;clip: rect(0 0 0 0);height: 1px;overflow: hidden;padding: 0;position: absolute;width: 1px;left: -9999em;}</style>
   
-  </body>
+  <div class="grid-1200">
+      <div class="row">
+        <div class="column3"><div class="side-menu"><b>Setup</b><br>
+
+<a href="./docs">Getting Started</a><br>
+<a href="./docs-basic-setup">Basic Setup</a><br>
+
+<b>Components</b><br>
+
+<a href="./docs-global">Global</a><br>
+<a href="./docs-lists">Lists </a><br>
+<a href="./docs-blockquotes">Blockquotes </a><br>
+<a href="docs-code">Code </a><br>
+
+<a href="./docs-nav">Nav </a><br>
+<a href="./docs-forms">Forms </a><br>
+<a href="./docs-buttons">Buttons </a><br>
+<a href="./docs-helpers">Helpers</a><br>
+<a href="./docs-grid">Grid </a><br>
+<a href="./docs-print">Print </a><br>
+
+<b>JS Helpers (js addons)</b>
+</div></div>
+        <div class="column9"><h1>404</h1><h3>Whoops. Looks like what you're looking for can't be found.</h3></div>
+      </div>
+  </div>
+  
+
+
+<div class="row pre-footer">
+	<div class="grid-full">
+		<div class="column6 padding32">
+		  <h3 class=""><i>We get power from the best of the bests in order to provide it to you!</i></h3>
+		  <small><i>Big thanks to HTML5 Boilerplate, Normalize.css, LESS and our daily Coffee!</i></small>
+		</div>
+		<div class="column6 padding16">
+			<div class="row text-center"><p>Built on top of great open source technology</p>
+			  <div class="row">
+				  <div class="column4">
+				    <img src="./img/html5boilerplate.svg" width="50" class="displayed">
+				    <small> HTML5 Boilerplate</small>
+				  </div>
+				  <div class="column4">
+				    <img src="./img/less.svg" width="110" class="displayed">
+				    <small>less</small>
+				  </div>
+				  <div class="column4">
+				    <br><img src="./img/normalize.svg" width="210" class="displayed">
+				    <small>normalize</small>
+				  </div>
+			  </div>
+			 
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="text-center">
+      <div class="row">
+        <div class="grid-1200">
+          <p><a href="./">Home</a> | <a href="https://github.com/powertoweb/powertocss" target="_blank" > Github</a> | <a href="https://github.com/powertoweb/powertocss/issues?milestone=none&state=open" target="_blank">Issues</a> | <a href="mailto:geral@powertoweb.com" target="_top">Join Us</a> <br>
+          Created in Lisbon with <span class="octicon octicon-heart"></span> and some coffee by PowerToWeb<br>
+          © 2014 PowerToWeb. Licensed under MIT license
+          </p>
+        </div>
+       </div>
+</footer>
+
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/nav-helper.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
 </html>
